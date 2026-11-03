@@ -4,6 +4,7 @@
   "private": true,
   "description": "Arcade racing game inspired by the Tesla Roadster",
   "scripts": {
+    "build": "node scripts/build.mjs",
     "start": "node server.mjs",
     "dev": "node server.mjs"
   },
