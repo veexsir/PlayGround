@@ -1,0 +1,13 @@
+{
+  "name": "tesla-roadster-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Arcade racing game inspired by the Tesla Roadster",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
