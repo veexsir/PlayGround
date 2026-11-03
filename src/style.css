@@ -1,0 +1,112 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #edf6ff;
+  background: #04070d;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at top, #0d1f2d 0%, #050b12 45%, #020507 100%);
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#hud {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.panel {
+  min-width: 240px;
+  padding: 16px 18px;
+  border: 1px solid rgba(135, 211, 255, 0.4);
+  background: rgba(7, 17, 26, 0.72);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow: 0 0 30px rgba(16, 97, 189, 0.3);
+}
+
+h1 {
+  margin: 0 0 12px;
+  font-size: 1.55rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #89d5ff;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 9px 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.stat span {
+  color: rgba(227, 240, 255, 0.75);
+}
+
+.stat strong {
+  color: #fff;
+  font-weight: 700;
+}
+
+.objective {
+  display: block;
+}
+
+.objective strong {
+  display: block;
+  margin-top: 6px;
+  color: #ffe082;
+}
+
+#message {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  z-index: 10;
+  padding: 12px 18px;
+  background: rgba(7, 17, 26, 0.7);
+  border: 1px solid rgba(162, 211, 255, 0.45);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  color: rgba(243, 250, 255, 0.9);
+}
+
+#restartBtn {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 10;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, #4cc9f0, #4361ee);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 0 28px rgba(58, 133, 255, 0.5);
+  display: none;
+}
+
+#restartBtn.visible {
+  display: block;
+}

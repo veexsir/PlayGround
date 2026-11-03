@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Heist 3D</title>
+    <meta name="description" content="A GTA-inspired 3D open-world driving game" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div class="panel">
+        <h1>Neon Heist 3D</h1>
+        <div class="stat"><span>Health</span><strong id="health">100</strong></div>
+        <div class="stat"><span>Cash</span><strong id="cash">$0</strong></div>
+        <div class="stat"><span>Wanted</span><strong id="wanted">0</strong></div>
+        <div class="stat objective"><span>Objective</span><strong id="objective">Collect 5 cash drops</strong></div>
+      </div>
+    </div>
+    <div id="message">WASD/Arrow keys drive • Reach the safehouse with $2500</div>
+    <button id="restartBtn" type="button">Restart</button>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
